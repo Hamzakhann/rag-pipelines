@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "question": "What is the governing law of this agreement?",
+    "contract": "<paste a contract filename from data/raw/>",
+    "ground_truth_passage": "<paste the exact sentence(s) that answer it>"
+  },
+  {
+    "id": 2,
+    "question": "What are the termination provisions?",
+    "contract": "<filename>",
+    "ground_truth_passage": "<exact passage>"
+  }
+]
