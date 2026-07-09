@@ -1,0 +1,12 @@
+# Never commit these
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# Raw data is large — keep it out of git, share via download script
+data/raw/
+data/processed/
+
+# Generated outputs
+outputs/
