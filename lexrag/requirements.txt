@@ -3,3 +3,9 @@ pdfplumber==0.11.4
 langchain-text-splitters==0.3.2
 datasets==3.2.0
 tiktoken==0.8.0
+
+# Day 2 — embeddings, vector store, LLM
+sentence-transformers==3.3.1
+chromadb==0.5.23
+anthropic==0.42.0
+python-dotenv==1.0.1

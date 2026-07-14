@@ -66,3 +66,56 @@ Before I embed, three things must be true:
 - It must have a real answer somewhere in your corpus (no unanswerable questions yet).
 - The ground_truth_passage is the actual text that answers it — copy it verbatim from the contract.
 - Cover variety: exact-term queries ("Section 8.2"), paraphrase queries ("can they cancel early?"), and multi-part queries ("all conditions for termination").
+
+
+
+
+"What is the governing law?"
+          │
+          ▼
+   [embedding model]
+          │
+          ▼
+   [0.021, -0.44, 0.87, ... ]   ← 384 numbers = coordinates on the meaning map
+
+
+How do you measure "closeness" on the map? → Cosine similarity
+You've got two locations (two lists of numbers). How do you measure how close they are? The standard tool is cosine similarity.
+Plain English version: it gives you a score between -1 and 1.
+
+- 1.0 = identical meaning (same direction on the map)
+- ~0 = unrelated
+- -1 = opposite meaning
+
+
+
+### 1. Sparse Retrieval (Keyword Search)
+* **What it is:** Exact word matching.
+* **Easy Analogy:** Using **`Ctrl + F`**.
+* **The Good:** Finds specific codes, numbers, or exact names perfectly (e.g., *"Section 8.2"*, *"Tom Watson"*).
+* **The Bad:** Blind to meaning. If you search *"governing law"*, it completely misses the clause if the text says *"applicable law"*.
+
+### 2. Dense Retrieval (Embedding Search)
+* **What it is:** Meaning and concept matching.
+* **Easy Analogy:** A **smart assistant** who gets your drift.
+* **The Good:** Finds synonyms and related ideas. If you search *"governing law"*, it successfully surfaces *"choice of law"* or *"jurisdiction"*.
+* **The Bad:** Can be too "fuzzy" or vague, occasionally missing the exact phrase you typed.
+
+---
+
+### 💡 Summary Trick
+* **Sparse** = Matches the **letters**.
+* **Dense** = Matches the **meaning**.
+
+
+### What a Vector Database Does (e.g., Chroma)
+It acts like a specialized warehouse for text and meaning, handling three main jobs locally with zero setup:
+
+* **Job 1: Stores Embeddings** – It keeps track of the mathematical vectors that represent your chunk meanings.
+* **Job 2: Finds Neighbors Fast (ANN)** – It uses **Approximate Nearest Neighbor (ANN)** indexing to find related chunks instantly.
+* **Job 3: Stores Metadata** – It holds extra tags alongside the text (e.g., *which contract*, *which section*, *what year*).
+
+---
+
+### 💡 The Big Takeaway on "Approximate"
+The word **approximate** matters because it means the database takes smart indexing shortcuts rather than checking every single vector in existence. This makes the search incredibly fast, trading a tiny fraction of mathematical perfection for massive speed.
