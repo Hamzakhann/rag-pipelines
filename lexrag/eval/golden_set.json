@@ -1,14 +1,122 @@
 [
   {
     "id": 1,
-    "question": "What is the governing law of this agreement?",
-    "contract": "<paste a contract filename from data/raw/>",
-    "ground_truth_passage": "<paste the exact sentence(s) that answer it>"
+    "question": "What is the contract name of the Lime Energy distributor agreement?",
+    "contract": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT.txt",
+    "ground_truth_passage": "DISTRIBUTOR AGREEMENT"
   },
   {
     "id": 2,
-    "question": "What are the termination provisions?",
-    "contract": "<filename>",
-    "ground_truth_passage": "<exact passage>"
+    "question": "Who are the parties to the Whitesmoke promotion and distribution agreement?",
+    "contract": "WHITESMOKE_INC_11_08_2011-EX-10_26-PROMOTION AND DISTRIBUTION AGREEMENT.txt",
+    "ground_truth_passage": "Google"
+  },
+  {
+    "id": 3,
+    "question": "What is the agreement date of the Nelnet joint filing agreement?",
+    "contract": "NELNETINC_04_08_2020-EX-1-JOINT FILING AGREEMENT.txt",
+    "ground_truth_passage": "March 27, 2020."
+  },
+  {
+    "id": 4,
+    "question": "What is the effective date of the Adams Golf endorsement agreement?",
+    "contract": "ADAMSGOLFINC_03_21_2005-EX-10_17-ENDORSEMENT AGREEMENT.txt",
+    "ground_truth_passage": "The Term of this Agreement shall be for a period of [* ****] years and [*****] months commencing the 1st day of September 2004 and terminating the [*****] day of [*****]."
+  },
+  {
+    "id": 5,
+    "question": "On what date will the initial term of the Kiromic Biopharma consulting agreement expire?",
+    "contract": "KIROMICBIOPHARMA_INC_05_11_2020-EX-10_23-CONSULTING AGREEMENT.txt",
+    "ground_truth_passage": "This Agreement will commence on the Effective Date and will continue until termination as provided below."
+  },
+  {
+    "id": 6,
+    "question": "What is the governing law of the Veoneer joint venture agreement?",
+    "contract": "VEONEER_INC_02_21_2020-EX-10_11-JOINT VENTURE AGREEMENT.txt",
+    "ground_truth_passage": "This Amendment shall be governed by and construed in accordance with the laws of Japan."
+  },
+  {
+    "id": 7,
+    "question": "In the MetLife remarketing agreement, does the contract include a cap on liability upon breach of a party's obligation?",
+    "contract": "MetLife_ Inc_ - Remarketing Agreement.txt",
+    "ground_truth_passage": "Notwithstanding the provisions of this subsection (d), no Remarketing Agent shall be required to contribute any amount in excess of the amount by which the total price at which the applicable Securities remarketed by it and distributed to the public were offered to the public exceeds the amount of any damages which such Remarketing Agent has otherwise been required to pay by reason of such untrue "
+  },
+  {
+    "id": 8,
+    "question": "What is the renewal term of the FTE Networks strategic alliance agreement after the initial term expires?",
+    "contract": "FTENETWORKS_INC_02_18_2016-EX-99_4-STRATEGIC ALLIANCE AGREEMENT.txt",
+    "ground_truth_passage": "After the Initial Term, this Agreement shall continue on a month to month basis until terminated by either party upon thirty (30) days prior written notice to the other setting forth the effective date of such termination."
+  },
+  {
+    "id": 9,
+    "question": "Can a party terminate the Domini Advisor Trust sponsorship agreement without cause for convenience?",
+    "contract": "DOMINIADVISORTRUST_02_18_2005-EX-99__H__2_-SPONSORSHIP AGREEMENT.txt",
+    "ground_truth_passage": "This Agreement may be terminated at any time, without the payment of any penalty, with respect to any series or the Trust, by the Board of Trustees of the Trust, or by the Sponsor, in each case on not less than 60 days' written notice to the other party."
+  },
+  {
+    "id": 10,
+    "question": "In the Lime Energy distributor agreement, is there an exclusive dealing commitment with the counterparty?",
+    "contract": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT.txt",
+    "ground_truth_passage": "The Company appoints the Distributor as an  exclusive  distributor  of Products in the Market,  subject to the terms and conditions of this Agreement."
+  },
+  {
+    "id": 11,
+    "question": "In the Whitesmoke promotion and distribution agreement, does a party have the right to terminate or is consent required if the counterparty undergoes a change of control?",
+    "contract": "WHITESMOKE_INC_11_08_2011-EX-10_26-PROMOTION AND DISTRIBUTION AGREEMENT.txt",
+    "ground_truth_passage": "For the  avoidance of doubt, a Change of Control shall be deemed an assignment hereunder unless [ * ] does not exercise its [ * ]."
+  },
+  {
+    "id": 12,
+    "question": "In the Adams Golf endorsement agreement, is there a restriction on the ability of a party to compete with the counterparty?",
+    "contract": "ADAMSGOLFINC_03_21_2005-EX-10_17-ENDORSEMENT AGREEMENT.txt",
+    "ground_truth_passage": "When endorsing a non-competitive product, under no circumstances shall CONSULTANT wear, play, use, hold or in any way be associated with an ADAMS GOLF competitor's Product."
+  },
+  {
+    "id": 13,
+    "question": "In the Kiromic Biopharma consulting agreement, is consent or notice required if the contract is assigned to a third party?",
+    "contract": "KIROMICBIOPHARMA_INC_05_11_2020-EX-10_23-CONSULTING AGREEMENT.txt",
+    "ground_truth_passage": "Consultant shall not subcontract any portion of Consultant's duties under this Agreement without the prior written consent of Company."
+  },
+  {
+    "id": 14,
+    "question": "In the MetLife remarketing agreement, is there a requirement for insurance that must be maintained by one party for the benefit of the counterparty?",
+    "contract": "MetLife_ Inc_ - Remarketing Agreement.txt",
+    "ground_truth_passage": "as an insurance company in its respective jurisdiction of incorporation and is duly licensed or authorized as an insurer in each other jurisdiction where it is required to be so licensed or authorized to conduct its business, in each case with such exceptions as would not have, individually or in the aggregate, a Material Adverse Effect; except as otherwise described in the Disclosure Package, eac"
+  },
+  {
+    "id": 15,
+    "question": "In the FTE Networks strategic alliance agreement, is there a restriction on a party's soliciting or hiring employees and/or contractors from the counterparty?",
+    "contract": "FTENETWORKS_INC_02_18_2016-EX-99_4-STRATEGIC ALLIANCE AGREEMENT.txt",
+    "ground_truth_passage": "Subcontractor, during the term of this Agreement and for a period of one year thereafter, shall not, directly or indirectly, for itself or on behalf of or in conjunction with any other person, partnership, corporation, business or organization, solicit, hire, contract with or engage the employment of an employee of EDGE with whom Subcontractor or its personnel have contact as a result of Subcontra"
+  },
+  {
+    "id": 16,
+    "question": "What is the contract name of the Nelnet joint filing agreement?",
+    "contract": "NELNETINC_04_08_2020-EX-1-JOINT FILING AGREEMENT.txt",
+    "ground_truth_passage": "JOINT FILING AGREEMENT"
+  },
+  {
+    "id": 17,
+    "question": "Who are the parties to the Veoneer joint venture agreement?",
+    "contract": "VEONEER_INC_02_21_2020-EX-10_11-JOINT VENTURE AGREEMENT.txt",
+    "ground_truth_passage": "Nissin Kogyo Co., Ltd."
+  },
+  {
+    "id": 18,
+    "question": "What is the agreement date of the Domini Advisor Trust sponsorship agreement?",
+    "contract": "DOMINIADVISORTRUST_02_18_2005-EX-99__H__2_-SPONSORSHIP AGREEMENT.txt",
+    "ground_truth_passage": "February 4, 2005"
+  },
+  {
+    "id": 19,
+    "question": "In the Lime Energy distributor agreement, is a party restricted from soliciting customers or partners of the counterparty?",
+    "contract": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT.txt",
+    "ground_truth_passage": "Term of the  Agreement  and for a period of  eighteen\n\n\n\n\n\n                           (18) months thereafter,  nor will Distributor solicit                            any  customer  or  potential  customer  of Company to                            purchase a competitive product during that period."
+  },
+  {
+    "id": 20,
+    "question": "What is the license grant under the Whitesmoke promotion and distribution agreement?",
+    "contract": "WHITESMOKE_INC_11_08_2011-EX-10_26-PROMOTION AND DISTRIBUTION AGREEMENT.txt",
+    "ground_truth_passage": "Subject to the terms and conditions of this Agreement, Google grants to Distributor a [* ] license during the  Term to: (a) bundle the Distribution Products, in machine-readable binary code format only, solely with Distributor App(s); (b) distribute  Bundles directly (or indirectly, subject to Clause 2.2 (Third Party Distribution)) to End Users in the Territory; (c) when indicated by the  applicab"
   }
 ]

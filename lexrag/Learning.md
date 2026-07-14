@@ -119,3 +119,7 @@ It acts like a specialized warehouse for text and meaning, handling three main j
 
 ### 💡 The Big Takeaway on "Approximate"
 The word **approximate** matters because it means the database takes smart indexing shortcuts rather than checking every single vector in existence. This makes the search incredibly fast, trading a tiny fraction of mathematical perfection for massive speed.
+
+
+
+### MRR vs NDCG vs MAP
