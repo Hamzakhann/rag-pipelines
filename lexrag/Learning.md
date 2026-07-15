@@ -402,3 +402,6 @@ Goal:
 | **Bi-Encoder** | Fast Retrieval | Compare query/document vectors. |
 | **Cross-Encoder** | Accurate Ranking | Read query and document together. |
 | **Two-Stage Retrieval** | Retrieval Pipeline | Fast retrieval → Accurate reranking. |
+
+
+#### RRF scores
