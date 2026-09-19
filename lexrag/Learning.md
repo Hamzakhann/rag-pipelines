@@ -405,3 +405,16 @@ Goal:
 
 
 #### RRF scores
+
+
+### Your project has two layers, and mixing them up is the confusion:
+```
+LAYER 1 — THE PIPELINE (does the work)
+loader.py → chunkers.py → embed_index.py → retrieve.py → 
+sparse_retrieve.py → hybrid_retrieve.py → rerank.py → rag_answer.py
+
+LAYER 2 — THE EVALS (grade the work)
+golden_set.json → compare_retrievers.py → latency_check.py
+```
+
+Layer 1 answers questions. Layer 2 tells you how good Layer 1 is. That's the whole distinction.
