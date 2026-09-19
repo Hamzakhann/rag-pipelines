@@ -1,0 +1,8 @@
+# Applies to every project in this repo (each project can add its own .gitignore)
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
